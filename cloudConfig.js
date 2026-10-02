@@ -12,7 +12,6 @@ const storage = new CloudinaryStorage({
     params: {
       folder: 'wanderlust_dev',
       allowedFormats:['png','jpeg','jpg','pdf'], // supports promises as well
-      public_id: (req, file) => 'computed-filename-using-request',
     },
 });
 
@@ -22,5 +21,4 @@ module.exports={
     cloudinary,
     storage
 }
-
 
